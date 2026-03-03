@@ -48,14 +48,104 @@ module-kaggle/
 │   └── Bab_6_Kesimpulan.md
 │
 ├── Contoh/                               # 💻 Praktik Langsung dengan Jupyter Notebook
-│   ├── 01_Regression_Harga_Rumah.ipynb
-│   ├── 02_Classification_Diabetes.ipynb
-│   ├── 03_Manual_ML_From_Scratch.ipynb
-│   ├── data_harga_rumah.csv
-│   ├── data_diabetes.csv
-│   ├── requirements.txt
-│   ├── Contoh_Praktik_ML_dengan_Evaluasi.md
-│   └── README_Praktik_ML.md
+├── 01_Student_Dropout
+│   ├── 01_dropout_logistic_regression.ipynb
+│   ├── 02_dropout_random_forest.ipynb
+│   ├── 03_dropout_xgboost.ipynb
+│   ├── 04_dropout_svm.ipynb
+│   ├── 05_dropout_neural_network.ipynb
+│   ├── 06_cgpa_linear_regression.ipynb
+│   ├── 07_cgpa_random_forest_regressor.ipynb
+│   ├── 08_cgpa_xgboost_regressor.ipynb
+│   └── saved_models
+│       ├── feature_columns_dropout.pkl
+│       ├── feature_columns_linreg.pkl
+│       ├── feature_columns_nn.pkl
+│       ├── feature_columns_rf.pkl
+│       ├── feature_columns_rf_reg.pkl
+│       ├── feature_columns_svm.pkl
+│       ├── feature_columns_xgb.pkl
+│       ├── feature_columns_xgb_reg.pkl
+│       ├── linear_regression_cgpa.pkl
+│       ├── logistic_regression_dropout.pkl
+│       ├── neural_network_dropout.pkl
+│       ├── random_forest_dropout.pkl
+│       ├── rf_regressor_cgpa.pkl
+│       ├── scaler_dropout.pkl
+│       ├── scaler_linreg.pkl
+│       ├── scaler_nn.pkl
+│       ├── scaler_svm.pkl
+│       ├── svm_dropout.pkl
+│       ├── xgboost_dropout.json
+│       ├── xgboost_dropout.pkl
+│       ├── xgb_regressor_cgpa.json
+│       └── xgb_regressor_cgpa.pkl
+├── 02_Toyota_Stock
+│   ├── 01_stock_arima.ipynb
+│   ├── 02_stock_prophet.ipynb
+│   ├── 03_stock_lstm.ipynb
+│   ├── 04_stock_gru.ipynb
+│   ├── 05_stock_random_forest.ipynb
+│   ├── 06_stock_xgboost.ipynb
+│   ├── 07_stock_linear_regression.ipynb
+│   └── saved_models
+│       ├── arima_order.pkl
+│       ├── arima_toyota.pkl
+│       ├── feature_cols_rf_stock.pkl
+│       ├── feature_cols_ridge_stock.pkl
+│       ├── feature_cols_xgb_stock.pkl
+│       ├── gru_config.pkl
+│       ├── gru_toyota.h5
+│       ├── gru_toyota.pth
+│       ├── lstm_config.pkl
+│       ├── lstm_toyota.h5
+│       ├── lstm_toyota.pth
+│       ├── prophet_toyota.json
+│       ├── prophet_toyota.pkl
+│       ├── rf_stock.pkl
+│       ├── ridge_stock.pkl
+│       ├── scaler_gru.pkl
+│       ├── scaler_lstm.pkl
+│       ├── xgb_stock.json
+│       └── xgb_stock.pkl
+├── 03_Student_Productivity
+│   ├── 01_productivity_linear_regression.ipynb
+│   ├── 02_productivity_rf_regressor.ipynb
+│   ├── 03_productivity_xgb_regressor.ipynb
+│   ├── 04_productivity_logistic.ipynb
+│   ├── 05_productivity_rf_clf.ipynb
+│   ├── 06_productivity_xgb_clf.ipynb
+│   ├── 07_productivity_kmeans.ipynb
+│   ├── 08_productivity_dbscan.ipynb
+│   └── saved_models
+│       ├── dbscan_params.pkl
+│       ├── dbscan_productivity.pkl
+│       ├── feature_cols_dbscan.pkl
+│       ├── feature_cols_kmeans.pkl
+│       ├── feature_cols_logistic_prod.pkl
+│       ├── feature_cols_prod_linreg.pkl
+│       ├── feature_cols_rf_prod_clf.pkl
+│       ├── feature_cols_rf_prod_reg.pkl
+│       ├── feature_cols_xgb_prod_clf.pkl
+│       ├── feature_cols_xgb_prod_reg.pkl
+│       ├── kmeans_productivity.pkl
+│       ├── knn_for_dbscan_predict.pkl
+│       ├── logistic_productivity.pkl
+│       ├── prod_clf_config.pkl
+│       ├── rf_clf_productivity.pkl
+│       ├── rf_reg_productivity.pkl
+│       ├── ridge_productivity.pkl
+│       ├── scaler_dbscan.pkl
+│       ├── scaler_kmeans.pkl
+│       ├── xgb_clf_productivity.json
+│       ├── xgb_clf_productivity.pkl
+│       ├── xgb_reg_productivity.json
+│       └── xgb_reg_productivity.pkl
+├── README_Praktik_ML.md
+├── requirements.txt
+├── student_dropout_dataset_v3.csv
+├── Toyota_Stock_Prices_1980_2026.csv
+└── ultimate_student_productivity_dataset_5000.csv
 │
 └── README.md                             # 📄 File ini
 ```
