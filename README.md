@@ -1,7 +1,7 @@
 # 📚 Module Kaggle & Machine Learning
 
 > **Repository pembelajaran lengkap tentang Kaggle, Machine Learning, dan Evaluation Metrics**  
-> Lengkap dengan teori, praktik, dan implementasi manual algoritma ML!
+> Lengkap dengan teori, 3 studi kasus nyata, dan **26 Jupyter Notebook** yang siap dijalankan!
 
 ---
 
@@ -12,7 +12,7 @@ Repository ini berisi materi pembelajaran komprehensif untuk memahami:
 2. **Dasar-dasar Machine Learning dengan data tabel**
 3. **Evaluation metrics untuk mengukur performa model**
 4. **Praktik langsung dengan dataset real dan Jupyter Notebook**
-5. **Implementasi algoritma ML dari nol (tanpa library)**
+5. **Studi kasus: Student Dropout, Toyota Stock Price, Student Productivity**
 
 **Cocok untuk:** Pemula, mahasiswa, data science enthusiast, dan siapa saja yang ingin memahami ML secara mendalam!
 
@@ -48,105 +48,53 @@ module-kaggle/
 │   └── Bab_6_Kesimpulan.md
 │
 ├── Contoh/                               # 💻 Praktik Langsung dengan Jupyter Notebook
-├── 01_Student_Dropout
-│   ├── 01_dropout_logistic_regression.ipynb
-│   ├── 02_dropout_random_forest.ipynb
-│   ├── 03_dropout_xgboost.ipynb
-│   ├── 04_dropout_svm.ipynb
-│   ├── 05_dropout_neural_network.ipynb
-│   ├── 06_cgpa_linear_regression.ipynb
-│   ├── 07_cgpa_random_forest_regressor.ipynb
-│   ├── 08_cgpa_xgboost_regressor.ipynb
-│   └── saved_models
-│       ├── feature_columns_dropout.pkl
-│       ├── feature_columns_linreg.pkl
-│       ├── feature_columns_nn.pkl
-│       ├── feature_columns_rf.pkl
-│       ├── feature_columns_rf_reg.pkl
-│       ├── feature_columns_svm.pkl
-│       ├── feature_columns_xgb.pkl
-│       ├── feature_columns_xgb_reg.pkl
-│       ├── linear_regression_cgpa.pkl
-│       ├── logistic_regression_dropout.pkl
-│       ├── neural_network_dropout.pkl
-│       ├── random_forest_dropout.pkl
-│       ├── rf_regressor_cgpa.pkl
-│       ├── scaler_dropout.pkl
-│       ├── scaler_linreg.pkl
-│       ├── scaler_nn.pkl
-│       ├── scaler_svm.pkl
-│       ├── svm_dropout.pkl
-│       ├── xgboost_dropout.json
-│       ├── xgboost_dropout.pkl
-│       ├── xgb_regressor_cgpa.json
-│       └── xgb_regressor_cgpa.pkl
-├── 02_Toyota_Stock
-│   ├── 01_stock_arima.ipynb
-│   ├── 02_stock_prophet.ipynb
-│   ├── 03_stock_lstm.ipynb
-│   ├── 04_stock_gru.ipynb
-│   ├── 05_stock_random_forest.ipynb
-│   ├── 06_stock_xgboost.ipynb
-│   ├── 07_stock_linear_regression.ipynb
-│   └── saved_models
-│       ├── arima_order.pkl
-│       ├── arima_toyota.pkl
-│       ├── feature_cols_rf_stock.pkl
-│       ├── feature_cols_ridge_stock.pkl
-│       ├── feature_cols_xgb_stock.pkl
-│       ├── gru_config.pkl
-│       ├── gru_toyota.h5
-│       ├── gru_toyota.pth
-│       ├── lstm_config.pkl
-│       ├── lstm_toyota.h5
-│       ├── lstm_toyota.pth
-│       ├── prophet_toyota.json
-│       ├── prophet_toyota.pkl
-│       ├── rf_stock.pkl
-│       ├── ridge_stock.pkl
-│       ├── scaler_gru.pkl
-│       ├── scaler_lstm.pkl
-│       ├── xgb_stock.json
-│       └── xgb_stock.pkl
-├── 03_Student_Productivity
-│   ├── 01_productivity_linear_regression.ipynb
-│   ├── 02_productivity_rf_regressor.ipynb
-│   ├── 03_productivity_xgb_regressor.ipynb
-│   ├── 04_productivity_logistic.ipynb
-│   ├── 05_productivity_rf_clf.ipynb
-│   ├── 06_productivity_xgb_clf.ipynb
-│   ├── 07_productivity_kmeans.ipynb
-│   ├── 08_productivity_dbscan.ipynb
-│   └── saved_models
-│       ├── dbscan_params.pkl
-│       ├── dbscan_productivity.pkl
-│       ├── feature_cols_dbscan.pkl
-│       ├── feature_cols_kmeans.pkl
-│       ├── feature_cols_logistic_prod.pkl
-│       ├── feature_cols_prod_linreg.pkl
-│       ├── feature_cols_rf_prod_clf.pkl
-│       ├── feature_cols_rf_prod_reg.pkl
-│       ├── feature_cols_xgb_prod_clf.pkl
-│       ├── feature_cols_xgb_prod_reg.pkl
-│       ├── kmeans_productivity.pkl
-│       ├── knn_for_dbscan_predict.pkl
-│       ├── logistic_productivity.pkl
-│       ├── prod_clf_config.pkl
-│       ├── rf_clf_productivity.pkl
-│       ├── rf_reg_productivity.pkl
-│       ├── ridge_productivity.pkl
-│       ├── scaler_dbscan.pkl
-│       ├── scaler_kmeans.pkl
-│       ├── xgb_clf_productivity.json
-│       ├── xgb_clf_productivity.pkl
-│       ├── xgb_reg_productivity.json
-│       └── xgb_reg_productivity.pkl
-├── README_Praktik_ML.md
-├── requirements.txt
-├── student_dropout_dataset_v3.csv
-├── Toyota_Stock_Prices_1980_2026.csv
-└── ultimate_student_productivity_dataset_5000.csv
+│   ├── student_dropout_dataset_v3.csv    # Dataset student dropout
+│   ├── Toyota_Stock_Prices_1980_2026.csv # Dataset harga saham Toyota
+│   ├── ultimate_student_productivity_dataset_5000.csv  # Dataset produktivitas mahasiswa
+│   ├── requirements.txt
+│   ├── README_Praktik_ML.md
+│   │
+│   ├── 01_Student_Dropout/               # Prediksi dropout & prediksi CGPA
+│   │   ├── README.md                     # 📄 Panduan dataset & EDA
+│   │   ├── 00_dropout_model_comparison.ipynb  # ⭐ Perbandingan semua model
+│   │   ├── 01_dropout_logistic_regression.ipynb
+│   │   ├── 02_dropout_random_forest.ipynb
+│   │   ├── 03_dropout_xgboost.ipynb
+│   │   ├── 04_dropout_svm.ipynb
+│   │   ├── 05_dropout_neural_network.ipynb
+│   │   ├── 06_cgpa_linear_regression.ipynb
+│   │   ├── 07_cgpa_random_forest_regressor.ipynb
+│   │   ├── 08_cgpa_xgboost_regressor.ipynb
+│   │   └── saved_models/
+│   │
+│   ├── 02_Toyota_Stock/                  # Prediksi harga saham Toyota
+│   │   ├── README.md                     # 📄 Panduan dataset & EDA
+│   │   ├── 00_stock_model_comparison.ipynb    # ⭐ Perbandingan semua model
+│   │   ├── 01_stock_arima.ipynb
+│   │   ├── 02_stock_prophet.ipynb
+│   │   ├── 03_stock_lstm.ipynb
+│   │   ├── 04_stock_gru.ipynb
+│   │   ├── 05_stock_random_forest.ipynb
+│   │   ├── 06_stock_xgboost.ipynb
+│   │   ├── 07_stock_linear_regression.ipynb
+│   │   └── saved_models/
+│   │
+│   └── 03_Student_Productivity/          # Analisis & prediksi produktivitas mahasiswa
+│       ├── README.md                     # 📄 Panduan dataset & EDA
+│       ├── 00_productivity_model_comparison.ipynb  # ⭐ Perbandingan semua model
+│       ├── 01_productivity_linear_regression.ipynb
+│       ├── 02_productivity_rf_regressor.ipynb
+│       ├── 03_productivity_xgb_regressor.ipynb
+│       ├── 04_productivity_logistic.ipynb
+│       ├── 05_productivity_rf_clf.ipynb
+│       ├── 06_productivity_xgb_clf.ipynb
+│       ├── 07_productivity_kmeans.ipynb
+│       ├── 08_productivity_dbscan.ipynb
+│       └── saved_models/
 │
+├── fix_xgb.py                            # 🔧 Utility: fix XGBoost early_stopping_rounds
+├── fix_xgb2.py                           # 🔧 Utility: fix XGBoost API compatibility
+├── LICENSE
 └── README.md                             # 📄 File ini
 ```
 
@@ -208,46 +156,112 @@ Deep dive ke evaluation metrics untuk regression dan classification, lengkap den
 
 ## 💻 Praktik dengan Jupyter Notebook
 
-Folder `Contoh/` berisi **3 Jupyter Notebook** yang bisa langsung dijalankan:
+Folder `Contoh/` berisi **26 Jupyter Notebook** yang diorganisasi dalam 3 studi kasus nyata.  
+Setiap studi kasus dilengkapi **README.md** berisi panduan dataset, EDA langkap-demi-langkah, dan ringkasan hasil.
 
-### 1️⃣ Prediksi Harga Rumah (Regression)
-**File:** `01_Regression_Harga_Rumah.ipynb`
+### 1️⃣ Student Dropout Prediction (`01_Student_Dropout/`)
+**Dataset:** `student_dropout_dataset_v3.csv` — 10.000 baris × 19 kolom  
+📄 [Lihat README lengkap →](Contoh/01_Student_Dropout/README.md)
 
-- **Dataset:** 30 data rumah (luas, kamar, umur, jarak ke kota → harga)
-- **Models:** Linear Regression vs Random Forest
-- **Metrics:** MAE, RMSE, R²
-- **Fitur:** EDA lengkap, visualisasi, feature importance, cross-validation
+Dua problem sekaligus: **klasifikasi dropout** dan **prediksi CGPA (regresi)**.
 
-### 2️⃣ Deteksi Diabetes (Binary Classification)  
-**File:** `02_Classification_Diabetes.ipynb`
+| # | File | Task | Model |
+|---|------|------|-------|
+| ⭐ | `00_dropout_model_comparison.ipynb` | Perbandingan | Semua model |
+| 01 | `01_dropout_logistic_regression.ipynb` | Classification | Logistic Regression |
+| 02 | `02_dropout_random_forest.ipynb` | Classification | Random Forest |
+| 03 | `03_dropout_xgboost.ipynb` | Classification | XGBoost |
+| 04 | `04_dropout_svm.ipynb` | Classification | SVM |
+| 05 | `05_dropout_neural_network.ipynb` | Classification | Neural Network |
+| 06 | `06_cgpa_linear_regression.ipynb` | Regression | Linear Regression |
+| 07 | `07_cgpa_random_forest_regressor.ipynb` | Regression | Random Forest |
+| 08 | `08_cgpa_xgboost_regressor.ipynb` | Regression | XGBoost |
 
-- **Dataset:** 40 data pasien (glucose, BMI, age, blood pressure → diabetes)
-- **Models:** Logistic Regression vs Random Forest
-- **Metrics:** Accuracy, Precision, Recall, F1, ROC-AUC, Confusion Matrix
-- **Fitur:** Class distribution, ROC curve, classification report
+- **Metrics (Klasifikasi):** Accuracy, Precision, Recall, F1, ROC-AUC, Confusion Matrix
+- **Metrics (Regresi):** MAE, RMSE, R²
+- Model terbaik disimpan di `saved_models/`
 
-### 3️⃣ Machine Learning Manual - From Scratch ⭐
-**File:** `03_Manual_ML_From_Scratch.ipynb`
+**Hasil Perbandingan Model (Klasifikasi Dropout):**
 
-- **Implementasi manual:** Linear Regression & Logistic Regression **TANPA scikit-learn!**
-- **Tools:** NumPy, Pandas, Matplotlib saja
-- **Yang Diimplementasikan:**
-  - Linear Regression (Normal Equation)
-  - Logistic Regression (Gradient Descent)
-  - Sigmoid function
-  - Binary Cross-Entropy loss
-  - Semua metrics (MAE, RMSE, R², Accuracy, Precision, Recall, F1, Confusion Matrix)
-  - Train-test split manual
-  - Standardization manual
-- **Penjelasan matematis lengkap** dengan formula LaTeX
-- **Comparison dengan scikit-learn** (hasilnya hampir identik!)
+| Peringkat | Model | Accuracy | F1-Score | ROC-AUC |
+|-----------|-------|----------|----------|---------|
+| 🥇 1 | Logistic Regression | ~0.68 | 0.587 | **0.821** |
+| 🥈 2 | XGBoost | ~0.67 | 0.575 | 0.809 |
+| 🥉 3 | Random Forest | ~0.67 | 0.569 | 0.806 |
 
-**🎯 Kenapa belajar implementasi manual?**
-- Memahami matematis di balik algoritma
-- Tahu exactly apa yang terjadi di black box
-- Bisa custom algoritma sesuai kebutuhan
-- Persiapan interview (sering ditanya!)
-- Foundation untuk deep learning
+---
+
+### 2️⃣ Toyota Stock Price Prediction (`02_Toyota_Stock/`)
+**Dataset:** `Toyota_Stock_Prices_1980_2026.csv` — 11.508 baris, 1980–2026  
+📄 [Lihat README lengkap →](Contoh/02_Toyota_Stock/README.md)
+
+Prediksi harga saham Toyota menggunakan berbagai pendekatan **time series** dan **ML klasik**.
+
+| # | File | Model |
+|---|------|-------|
+| ⭐ | `00_stock_model_comparison.ipynb` | Perbandingan semua model |
+| 01 | `01_stock_arima.ipynb` | ARIMA |
+| 02 | `02_stock_prophet.ipynb` | Prophet |
+| 03 | `03_stock_lstm.ipynb` | LSTM (Deep Learning) |
+| 04 | `04_stock_gru.ipynb` | GRU (Deep Learning) |
+| 05 | `05_stock_random_forest.ipynb` | Random Forest |
+| 06 | `06_stock_xgboost.ipynb` | XGBoost |
+| 07 | `07_stock_linear_regression.ipynb` | Linear Regression |
+
+- **Metrics:** MAE, RMSE, MAPE, Directional Accuracy, R²
+- Model disimpan di `saved_models/` (format `.json`, `.h5`, `.pth`)
+
+**Hasil Perbandingan Model:**
+
+| Peringkat | Model | Pendekatan | Keunggulan |
+|-----------|-------|------------|------------|
+| 🥇 1 | Ridge Regression | ML + fitur lag | MAE & R² terbaik |
+| 🥈 2 | XGBoost | ML + fitur lag | RMSE rendah |
+| 🥉 3 | Random Forest | ML + fitur lag | Robust terhadap outlier |
+| 4 | GRU | Deep Learning | Tangkap pola sekuensial |
+| 5 | LSTM | Deep Learning | Memori jangka panjang |
+| 6 | Prophet | Statistik | Deteksi seasonality |
+| 7 | ARIMA | Statistik | Baseline klasik |
+
+---
+
+### 3️⃣ Student Productivity Analysis (`03_Student_Productivity/`)
+**Dataset:** `ultimate_student_productivity_dataset_5000.csv` — 5.000 baris × 21 kolom  
+📄 [Lihat README lengkap →](Contoh/03_Student_Productivity/README.md)
+
+Analisis produktivitas mahasiswa — mencakup **regresi**, **klasifikasi**, dan **clustering**.
+
+| # | File | Task | Model |
+|---|------|------|-------|
+| ⭐ | `00_productivity_model_comparison.ipynb` | Perbandingan | Semua model |
+| 01 | `01_productivity_linear_regression.ipynb` | Regression | Linear Regression |
+| 02 | `02_productivity_rf_regressor.ipynb` | Regression | Random Forest |
+| 03 | `03_productivity_xgb_regressor.ipynb` | Regression | XGBoost |
+| 04 | `04_productivity_logistic.ipynb` | Classification | Logistic Regression |
+| 05 | `05_productivity_rf_clf.ipynb` | Classification | Random Forest |
+| 06 | `06_productivity_xgb_clf.ipynb` | Classification | XGBoost |
+| 07 | `07_productivity_kmeans.ipynb` | Clustering | K-Means |
+| 08 | `08_productivity_dbscan.ipynb` | Clustering | DBSCAN |
+
+- Model terbaik disimpan di `saved_models/`
+
+**Hasil Perbandingan Model:**
+
+*Regresi (`productivity_score`):*
+
+| Peringkat | Model | MAE | RMSE | R² |
+|-----------|-------|-----|------|----|
+| 🥇 1 | Ridge Regression | 4.126 | 5.007 | **0.904** |
+| 🥈 2 | XGBoost | 4.322 | 5.291 | 0.893 |
+| 🥉 3 | Random Forest | 4.560 | 5.645 | 0.878 |
+
+*Klasifikasi (`high_productivity`):*
+
+| Peringkat | Model | Accuracy | F1-Score | ROC-AUC |
+|-----------|-------|----------|----------|---------|
+| 🥇 1 | Logistic Regression | 0.914 | **0.913** | **0.977** |
+| 🥈 2 | XGBoost | 0.904 | 0.903 | 0.974 |
+| 🥉 3 | Random Forest | 0.898 | 0.896 | 0.966 |
 
 ---
 
@@ -295,7 +309,13 @@ numpy>=1.24.0
 matplotlib>=3.7.0
 seaborn>=0.12.0
 scikit-learn>=1.3.0
+xgboost>=2.0.0
+prophet>=1.1.0
+tensorflow>=2.13.0   # LSTM & GRU
+torch>=2.0.0         # PyTorch models
 jupyter>=1.0.0
+notebook>=7.0.0
+ipykernel>=6.25.0
 ```
 
 Install semua dengan:
@@ -310,21 +330,21 @@ pip install -r Contoh/requirements.txt
 ### Untuk Pemula Absolut:
 1. 📗 **Modul 2** → Pahami dasar ML dulu
 2. 📙 **Modul 3** → Pelajari evaluation metrics
-3. 💻 **Notebook 01 & 02** → Praktik dengan scikit-learn
-4. 📘 **Modul 1** → Belajar buat kompetisi (opsional)
-5. 💻 **Notebook 03** → Implementasi manual (advanced)
+3. 💻 **01_Student_Dropout** (notebook 01–05) → Klasifikasi dengan berbagai model
+4. 💻 **03_Student_Productivity** (notebook 01–03) → Regresi dengan dataset besar
+5. 📘 **Modul 1** → Belajar buat kompetisi (opsional)
 
 ### Untuk yang Sudah Paham Konsep:
-1. 💻 **Notebook 01 & 02** → Refresh dengan praktik
+1. 💻 **02_Toyota_Stock** → Time series (ARIMA, Prophet, LSTM, GRU)
 2. 📙 **Modul 3** → Deep dive metrics
-3. 💻 **Notebook 03** → Pahami algoritma dari dalam
+3. 💻 **03_Student_Productivity** (notebook 07–08) → Clustering (K-Means & DBSCAN)
 4. 📘 **Modul 1** → Buat kompetisi sendiri
 
 ### Untuk Persiapan Interview:
 1. 📗 **Modul 2 Bab 4** → Review model-model ML
 2. 📙 **Modul 3** → Hafal semua metrics
-3. 💻 **Notebook 03** → Implementasi manual (PENTING!)
-4. Praktik coding whiteboard dengan algoritma dari scratch
+3. 💻 Pilih satu studi kasus dan pelajari perbandingan antar model
+4. Pahami trade-off setiap algoritma dari hasil notebook
 
 ---
 
@@ -342,11 +362,11 @@ pip install -r Contoh/requirements.txt
 - Visualisasi yang informatif
 - Interpretasi hasil yang lengkap
 
-### ✨ Implementasi Manual Algoritma ML
-- **Pertama di Indonesia!** (mungkin 😄)
-- Memahami math di balik ML
-- Comparison dengan library standar
-- Educational value tinggi
+### ✨ Studi Kasus Nyata dengan Dataset Real
+- 3 studi kasus: Student Dropout, Stock Price, Student Productivity
+- 23 notebook yang bisa langsung dijalankan
+- Perbandingan berbagai model pada dataset yang sama
+- Model disimpan dan siap digunakan ulang
 
 ### ✨ End-to-End Learning
 - Dari konsep → praktik → implementasi
