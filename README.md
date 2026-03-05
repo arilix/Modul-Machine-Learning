@@ -269,7 +269,7 @@ Analisis produktivitas mahasiswa — mencakup **regresi**, **klasifikasi**, dan 
 
 ### 1. Clone Repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/arilix/Modul-Machine-Learning.git
 cd module-kaggle
 ```
 
